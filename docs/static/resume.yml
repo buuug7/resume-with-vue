@@ -12,14 +12,11 @@ basicInfo:
     phone: 18309467501
     email: youpp@126.com
   socialAccounts:
-    -
-      name: github
+    - name: github
       url: https://github.com/buuug7
-    -
-      name: linkedin
+    - name: linkedin
       url: http://www.linkedin.com/in/puguohong/
-    -
-      name: stack-overflow
+    - name: stack-overflow
       url: https://stackoverflow.com/users/6080636/puguohong
 
 # Self description 自我描述
@@ -28,30 +25,26 @@ selfDescription:
 
 # Skills 技能
 skills:
-  -
-    name: HTML5
+  - name: Common=Git/Terminal/DataStructures/Github/SemanticVersioning
+    level: 70
+  - name: Language=HTML/CSS/Javascript/TypeScript/Node/PHP
     level: 75
-  -
-    name: CSS3
-    level: 75
-  -
-    name: JavaScript
+  - name: PackageManger=npm/yarn/composer/apt
+    level: 70
+  - name: Framework=Express/Koa/Laravel/YII2
+    level: 70
+  - name: CssFramwork=Bootstrap/Bulma/Material-ui/ant-design
+    level: 70
+  - name: ModuleBundlers=Webpack/Parcel/Rollup
     level: 65
-  -
-    name: PHP
+  - name: Test=Mocha/Jest/Phpunit
+    level: 60
+  - name: WebServer=Nginx/Apache2
     level: 70
-  -
-    name: Git
-    level: 70
-  -
-    name: Laravel
-    level: 70
-  -
-    name: Vue
+  - name: LinuxDistribute=Ubuntu
+    level: 60
+  - name: Database=Mysql
     level: 65
-  -
-    name: jQuery
-    level: 75
 
 # Job intention 求职意向
 jobIntention:
@@ -62,8 +55,7 @@ jobIntention:
 
 #educationExperiences 教育经历
 educationExperiences:
-  -
-    id: 0
+  - id: 0
     durationTime: 2007.9-2011.6
     educationName: 兰州理工大学
     educationSubject: 电子信息科学与技术
@@ -71,66 +63,52 @@ educationExperiences:
 
 # Work experiences 工作经历
 workExperiences:
-  -
-    id: 0
+  - id: 0
     time: 2013.5-2015.7
     companyName: 瑞通科技
-    workPosition: Frontend Developer
+    workPosition: web前后端
     workContents:
-      -
-        id: 0
+      - id: 0
         text: 维护公司已有前端项目，负责公司Web项目前端开发
-      -
-        id: 1
+      - id: 1
         text: 负责前端开发标准规范的制定、维护
-      -
-        id: 2
+      - id: 2
         text: 与美工、后端工程相互配合，负责公司各产品易用性改进、界面技术优化和性能优化
-  -
-    id: 1
+  - id: 1
     time: 2015.7-2017.9
     companyName: 甘肃天奇
     workPosition: web前后端
     workContents:
-      -
-        id: 0
+      - id: 0
         text: 维护公司web项目，参与公司web项目前后端的设计、开发以及部署
-      -
-        id: 1
+      - id: 1
         text: 根据项目具体要求，承担开发任务，配合后端开发人员接入相关接口数据并展现
-      -
-        id: 2
+      - id: 2
         text: 对旧项目的改进升级以及二次开发
-      -
-        id: 3
+      - id: 3
         text: 负责手机端和PC端产品的前端页面开发
-      -
-        id: 4
+      - id: 4
         text: 负责前后端开发标准规范的制定、维护
 
 # Project experiences 项目经验
 projectExperiences:
-  -
-    id: 0
+  - id: 0
     name: 鸡汤文
     url: http://soups.tq0.com/
-    position: Frontend | Backend
+    position: Fullstack
     description: 一个用来分享和收藏心灵鸡汤的网站
-  -
-    id: 1
+  - id: 1
     name: 定西人大官网
     url: http://dxrdw.gov.cn/
-    position: 前后端
+    position: Fullstack
     description: 定西人大官方官网
-  -
-    id: 2
+  - id: 2
     name: 定西社会组织
     url: http://dxsh.gov.cn/
-    position: web前后端
+    position: Fullstack
     description: 定西市民间组织管理局官方网站
-  -
-    id: 3
+  - id: 3
     name: 渭源县电子商务公共服务中心
     url: http://ds8.com.cn/
-    position: web前后端
+    position: Fullstack
     description: 渭源县商务局，渭源县电子商务公共服务中心。

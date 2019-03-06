@@ -22,13 +22,13 @@
 </template>
 
 <script>
-export default {
-  name: 'ResumeSkills',
-  props: ['skills'],
-  components: {
-    //
+  export default {
+    name: 'ResumeSkills',
+    props: ['skills'],
+    components: {
+      //
+    }
   }
-}
 </script>
 
 <style lang="scss" scoped>
@@ -36,24 +36,33 @@ export default {
     background-color: #fff;
     padding: 1rem 2rem;
   }
-  .progress--skill{
+
+  .progress--skill {
     height: 1px;
     overflow: initial;
-    .progress-bar{
+
+    .progress-bar {
       position: relative;
-      &:after{
+
+      &:after {
         content: "\f111";
         position: absolute;
         font: normal normal normal 14px/1 FontAwesome;
         font-size: 10px;
         text-rendering: auto;
         display: inline-block;
-        color:#007bff;
+        color: #007bff;
         right: 0;
       }
     }
-    .resume-skills__item-skill{
+
+    .resume-skills__item-skill {
 
     }
+  }
+
+  .resume-skills__item-skill-name {
+    font-size: 14px;
+
   }
 </style>
