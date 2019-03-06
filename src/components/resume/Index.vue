@@ -1,0 +1,84 @@
+<template>
+  <div class="resume">
+    <Header :basicInfo="resume.basicInfo" class="mb-1" />
+
+    <SelfDescription :selfDescription="resume.selfDescription" class="mb-1" />
+
+    <Skills :skills="resume.skills" class="mb-1" />
+
+    <JobIntention :jobIntention="resume.jobIntention" class="mb-1" />
+
+    <EducationExperience
+      :educationExperiences="resume.educationExperiences"
+      class="mb-1"
+    />
+
+    <WorkExperience :workExperiences="resume.workExperiences" class="mb-1" />
+
+    <ProjectExperience
+      :projectExperiences="resume.projectExperiences"
+      class="mb-1"
+    />
+
+    <Footer />
+  </div>
+</template>
+
+<script>
+import yaml from 'js-yaml';
+import Header from './Header';
+import SelfDescription from './SelfDescription';
+import Skills from './Skills';
+import JobIntention from './JobIntention';
+import WorkExperience from './WorkExperience';
+import ProjectExperience from './ProjectExperience';
+import EducationExperience from './EducationExperience';
+import Footer from './Footer';
+
+export default {
+  name: 'ResumeIndex',
+  data() {
+    return {
+      /** @var {{basicInfo:object,selfDescription:object,skills:object,jobIntention:object,educationExperiences:object,workExperiences:object,projectExperiences:object}} */
+      resume: {},
+      flag: false
+    };
+  },
+  mounted() {
+    this.getResume();
+  },
+  methods: {
+    getResume() {
+      fetch('/static/resume.yml').then(response => {
+        response.text().then(text => {
+          this.resume = yaml.safeLoad(text);
+        });
+      });
+    }
+  },
+  components: {
+    Header,
+    SelfDescription,
+    Skills,
+    JobIntention,
+    WorkExperience,
+    ProjectExperience,
+    EducationExperience,
+    Footer
+  }
+};
+</script>
+
+<style scoped lang="scss">
+.resume {
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+@media (max-width: 768px) {
+  .resume {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+</style>
