@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     getResume() {
-      fetch('/static/resume.yml').then(response => {
+      fetch('static/resume.yml').then(response => {
         response.text().then(text => {
           this.resume = yaml.safeLoad(text);
         });
