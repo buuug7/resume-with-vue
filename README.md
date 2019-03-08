@@ -9,3 +9,7 @@
 4. Preview resume with `npm run serve`
 5. Export to PDF with `npm run pdf`, and it will exported to `pdf/` folder. 
 
+
+## other
++ `docs` 目录对应为gh-pages
+
