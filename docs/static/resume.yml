@@ -27,19 +27,19 @@ selfDescription:
 skills:
   - name: Common=Git/Terminal/DataStructures/Github/SemanticVersioning
     level: 70
-  - name: Language=HTML/CSS/Javascript/TypeScript/Node/PHP
+  - name: Language=HTML/CSS/Javascript/TypeScript/Node/Java/PHP
     level: 75
-  - name: PackageManger=npm/yarn/composer/apt
+  - name: PackageManger=npm/yarn/composer/apt/maven/gradle
     level: 70
-  - name: Framework=Express/Koa/Laravel/YII2
+  - name: Framework=Express/Koa/Laravel/SpringBoot/YII2
     level: 70
   - name: CssFramwork=Bootstrap/Bulma/Material-ui/ant-design
     level: 70
   - name: ModuleBundlers=Webpack/Parcel/Rollup
     level: 65
-  - name: Test=Mocha/Jest/Phpunit
+  - name: Test=Mocha/Jest/Junit/Phpunit
     level: 60
-  - name: WebServer=Nginx/Apache2
+  - name: WebServer=Nginx/Apache2/Tomcat/Jetty
     level: 70
   - name: LinuxDistribute=Ubuntu
     level: 60
@@ -56,7 +56,7 @@ jobIntention:
 #educationExperiences 教育经历
 educationExperiences:
   - id: 0
-    durationTime: 2007.9-2011.6
+    durationTime: 2007.9 - 2011.6
     educationName: 兰州理工大学
     educationSubject: 电子信息科学与技术
     educationLevel: 本科
@@ -64,7 +64,7 @@ educationExperiences:
 # Work experiences 工作经历
 workExperiences:
   - id: 0
-    time: 2013.5-2015.7
+    time: 2013.5 - 2015.7
     companyName: 瑞通科技
     workPosition: web前后端
     workContents:
@@ -75,7 +75,7 @@ workExperiences:
       - id: 2
         text: 与美工、后端工程相互配合，负责公司各产品易用性改进、界面技术优化和性能优化
   - id: 1
-    time: 2015.7-2017.9
+    time: 2015.7 - 2017.9
     companyName: 甘肃天奇
     workPosition: web前后端
     workContents:
@@ -89,6 +89,15 @@ workExperiences:
         text: 负责手机端和PC端产品的前端页面开发
       - id: 4
         text: 负责前后端开发标准规范的制定、维护
+  - id: 2
+    time: 2018.7 - now
+    companyName: 西安图迹
+    workPosition: Frontend
+    workContents:
+      - id: 0
+        text: 负责公司web项目前端相关工作
+      - id: 1
+        text: 负责公司手机应用开发
 
 # Project experiences 项目经验
 projectExperiences:
@@ -112,3 +121,13 @@ projectExperiences:
     url: http://ds8.com.cn/
     position: Fullstack
     description: 渭源县商务局，渭源县电子商务公共服务中心。
+  - id: 4
+    name: 华润电力移动EAM
+    url: none
+    position: Frontend
+    description: 华润电力移动资产管理系统
+  - id: 5
+    name: 南方电网工程服务系统
+    url: none
+    position: Frontend
+    description: 南方电网工程服务系统
