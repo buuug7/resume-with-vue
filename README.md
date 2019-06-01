@@ -1,6 +1,6 @@
 # resume with vue
 
-> create your resume easily, made with Vue. Inspired by [best-resume-ever](https://github.com/salomonelli/best-resume-ever).
+create your resume easily, made with Vue. Inspired by [best-resume-ever](https://github.com/salomonelli/best-resume-ever).
 
 ## How to use
 1. Clone this repository

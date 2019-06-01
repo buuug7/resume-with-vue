@@ -18,7 +18,7 @@ export default {
     flex-direction: column;
     padding: 2rem;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     >p {
       margin:0;
     }

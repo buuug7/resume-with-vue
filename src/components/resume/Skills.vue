@@ -35,6 +35,7 @@
   .resume-skills {
     background-color: #fff;
     padding: 1rem 2rem;
+    overflow-x: auto;
   }
 
   .progress--skill {

@@ -8,9 +8,10 @@
         :key="projectExperience.id"
       >
         <div class="resume-work-experience__project mb-2">
-          <a :href="projectExperience.url" target="_blank" class="resume-work-experience__project-name">
+          <a :href="projectExperience.url" v-if="projectExperience.url !== 'none'" target="_blank" class="resume-work-experience__project-name">
             {{ projectExperience.name }}
           </a>
+          <span v-else class="resume-work-experience__project-name">{{ projectExperience.name }}</span>
           <em class="vline"></em>
           <span class="resume-project-experience__project-position text-secondary">
             {{ projectExperience.position }}
