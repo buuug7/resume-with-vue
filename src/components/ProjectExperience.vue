@@ -1,14 +1,16 @@
 <template>
   <div class="resume-project-experience" v-if="projectExperiences">
     <h4 class="resume-project-experience__title text-center font-size-22 mb-3">项目经验</h4>
-    <ul class="resume-project-experience__time-line list-unstyled">
+    <ul class="resume-project-experience__time-line">
       <li
         class="resume-project-experience__item"
         v-for="projectExperience in projectExperiences"
         :key="projectExperience.id"
       >
         <div class="resume-work-experience__project mb-2">
-          <a :href="projectExperience.url" v-if="projectExperience.url !== 'none'" target="_blank" class="resume-work-experience__project-name">
+          <a :href="projectExperience.url"
+             v-if="projectExperience.url !== 'none'" target="_blank"
+             class="resume-work-experience__project-name">
             {{ projectExperience.name }}
           </a>
           <span v-else class="resume-work-experience__project-name">{{ projectExperience.name }}</span>
@@ -43,6 +45,7 @@ export default {
   .resume-project-experience__time-line {
     padding-left: 4rem;
     position: relative;
+    list-style: none;
     &:before {
       content: ' ';
       position: absolute;

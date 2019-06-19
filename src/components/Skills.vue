@@ -1,7 +1,7 @@
 <template>
   <div class="resume-skills" v-if="skills">
     <h4 class="resume-skills__title text-center mb-3">技能</h4>
-    <ul class="resume-skills__skills list-unstyled">
+    <ul class="resume-skills__skills">
       <li
         class="resume-skills__item-skill mb-3"
         v-for="skill in skills"
@@ -10,7 +10,7 @@
         <div class="resume-skills__item-skill-name text-secondary">{{ skill.name }}</div>
         <div class="progress progress--skill">
           <div
-            class="progress-bar progress-bar-striped"
+            class="progress-bar"
             role="progressbar"
             :style="{ width: skill.level + '%' }"
           >
@@ -38,12 +38,27 @@
     overflow-x: auto;
   }
 
+  .resume-skills__skills {
+    list-style: none;
+    padding-left: 0;
+  }
+
   .progress--skill {
     height: 1px;
     overflow: initial;
+    display: flex;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
 
     .progress-bar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       position: relative;
+      background-color: #007bff;
+      color: #007bff;
+      text-align: center;
+      white-space: nowrap;
 
       &:after {
         content: "\f111";
@@ -64,6 +79,5 @@
 
   .resume-skills__item-skill-name {
     font-size: 14px;
-
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="resume-footer bg-light text-muted font-size-14">
+  <div class="resume-footer text-muted">
     <p>
       Copyright <i class="fa fa-copyright"></i> 2018 <a href="https://github.com/buuug7" target="_blank">Buuug7</a>
     </p>

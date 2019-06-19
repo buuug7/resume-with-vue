@@ -1,19 +1,19 @@
 <template>
   <div class="resume">
-    <Header :basicInfo="resume.basicInfo" class="mb-1" />
+    <Header :basicInfo="resume.basicInfo" class="mb-2" />
 
-    <SelfDescription :selfDescription="resume.selfDescription" class="mb-1" />
+    <SelfDescription :selfDescription="resume.selfDescription" class="mb-2" />
 
-    <Skills :skills="resume.skills" class="mb-1" />
+    <Skills :skills="resume.skills" class="mb-2" />
 
-    <JobIntention :jobIntention="resume.jobIntention" class="mb-1" />
+    <JobIntention :jobIntention="resume.jobIntention" class="mb-2" />
 
     <EducationExperience
       :educationExperiences="resume.educationExperiences"
-      class="mb-1"
+      class="mb-2"
     />
 
-    <WorkExperience :workExperiences="resume.workExperiences" class="mb-1" />
+    <WorkExperience :workExperiences="resume.workExperiences" class="mb-2" />
 
     <ProjectExperience
       :projectExperiences="resume.projectExperiences"
@@ -71,7 +71,7 @@ export default {
 
 <style scoped lang="scss">
 .resume {
-  max-width: 700px;
+  max-width: 650px;
   margin: 4rem auto;
 }
 

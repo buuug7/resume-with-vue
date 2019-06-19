@@ -1,7 +1,7 @@
 <template>
   <div class="resume-work-experience" v-if="workExperiences">
     <h4 class="resume-work-experience__title text-center mb-3">工作经历</h4>
-    <ul class="resume-work-experience__time-line list-unstyled">
+    <ul class="resume-work-experience__time-line">
       <li
         class="resume-work-experience__item"
         v-for="workExperience in workExperiences"
@@ -42,6 +42,7 @@ export default {
   .resume-work-experience__time-line {
     padding-left: 4rem;
     position: relative;
+    list-style: none;
     &:before {
       content: ' ';
       position: absolute;

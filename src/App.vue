@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Resume from './components/resume/Index'
+import Resume from './components/Index'
 
 export default {
   name: 'app',
