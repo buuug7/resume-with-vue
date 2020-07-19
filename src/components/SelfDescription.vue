@@ -1,7 +1,7 @@
 <template>
-  <div class="resume-self-description" v-if="selfDescription">
-    <h4 class="resume-self-description__title text-center mb-3">自我描述</h4>
-    <p class="resume-self-description__description">
+  <div class="self-description" v-if="selfDescription">
+    <h4 class="self-description__title text-center mb-3">自我描述</h4>
+    <p class="self-description__description">
       {{ selfDescription.description }}</p>
   </div>
 </template>
@@ -17,11 +17,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .resume-self-description {
+  .self-description {
     background-color: #fff;
     padding: 1rem 2rem;
   }
-  .resume-self-description__description {
+  .self-description__description {
     //margin:0;
   }
 </style>

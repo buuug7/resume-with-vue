@@ -1,25 +1,25 @@
 <template>
-  <div class="resume-education-experience" v-if="educationExperiences">
-    <h4 class="resume-education-experience__title text-center mb-3">教育经历</h4>
-    <ul class="resume-education-experience__time-line">
+  <div class="education-experience" v-if="educationExperiences">
+    <h4 class="education-experience__title text-center mb-3">教育经历</h4>
+    <ul class="education-experience__time-line">
       <li
-        class="resume-education-experience__item"
+        class="education-experience__item"
         v-for="educationExperience in educationExperiences"
         v-bind:key="educationExperience.id"
       >
-        <div class="resume-education-experience__duration-time mb-2 text-secondary">
+        <div class="education-experience__duration-time mb-2 text-secondary">
           {{ educationExperience.durationTime }}
         </div>
-        <div class="resume-education-experience__item-education-info">
-          <span class="resume-education-experience__education-name">
+        <div class="education-experience__item-education-info">
+          <span class="education-experience__education-name">
             {{ educationExperience.educationName }}
           </span>
           <em class="vline"></em>
-          <span class="resume-education-experience__education-subject">
+          <span class="education-experience__education-subject">
             {{ educationExperience.educationSubject }}
           </span>
           <em class="vline"></em>
-          <span class="resume-education-experience__education-level">
+          <span class="education-experience__education-level">
             {{ educationExperience.educationLevel }}
           </span>
         </div>
@@ -40,11 +40,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .resume-education-experience {
+  .education-experience {
     background-color: #fff;
     padding: 1rem 2rem;
   }
-  .resume-education-experience__time-line{
+  .education-experience__time-line{
     padding-left: 4rem;
     position: relative;
     list-style: none;
@@ -59,13 +59,13 @@ export default {
       bottom: 0;
     }
 
-    .resume-education-experience__item{
+    .education-experience__item{
       margin-left: -2rem;
       padding: 1rem;
       position: relative;
     }
   }
-  .resume-education-experience__duration-time{
+  .education-experience__duration-time{
     border-radius: 5px;
     &:before {
       content: '';
@@ -79,11 +79,11 @@ export default {
       left: -4px;
     }
   }
-  .resume-education-experience__education-name{
+  .education-experience__education-name{
     font-weight: bold;
   }
 
-  .resume-education-experience__item-education-info{
+  .education-experience__item-education-info{
     &:before {
       content: ' ';
       position: absolute;

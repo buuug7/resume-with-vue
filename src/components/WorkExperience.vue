@@ -1,22 +1,22 @@
 <template>
-  <div class="resume-work-experience" v-if="workExperiences">
-    <h4 class="resume-work-experience__title text-center mb-3">工作经历</h4>
-    <ul class="resume-work-experience__time-line">
+  <div class="work-experience" v-if="workExperiences">
+    <h4 class="work-experience__title text-center mb-3">工作经历</h4>
+    <ul class="work-experience__time-line">
       <li
-        class="resume-work-experience__item"
+        class="work-experience__item"
         v-for="workExperience in workExperiences"
         :key="workExperience.id"
       >
-        <div class="resume-work-experience__item-time mb-2 text-secondary small">
+        <div class="work-experience__item-time mb-2 text-secondary small">
           {{ workExperience.time }}
         </div>
-        <div class="resume-work-experience__company mb-2">
-          <span class="resume-work-experience__company-name">{{ workExperience.companyName }}</span>
+        <div class="work-experience__company mb-2">
+          <span class="work-experience__company-name">{{ workExperience.companyName }}</span>
           <em class="vline"></em>
-          <span class="resume-work-experience__company-work-position text-secondary">{{ workExperience.workPosition }}</span>
+          <span class="work-experience__company-work-position text-secondary">{{ workExperience.workPosition }}</span>
         </div>
-        <div class="resume-work-experience__work-content-title mb-2">工作内容</div>
-        <ul class="resume-work-experience__work-content text-secondary">
+        <div class="work-experience__work-content-title mb-2">工作内容</div>
+        <ul class="work-experience__work-content text-secondary">
           <li v-for="workContent in workExperience.workContents" :key="workContent.id">{{ workContent.text }}</li>
         </ul>
       </li>
@@ -35,11 +35,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .resume-work-experience {
+  .work-experience {
     background-color: #fff;
     padding: 1rem 2rem;
   }
-  .resume-work-experience__time-line {
+  .work-experience__time-line {
     padding-left: 4rem;
     position: relative;
     list-style: none;
@@ -53,12 +53,12 @@ export default {
       top: 0;
       bottom: 0;
     }
-    .resume-work-experience__item {
+    .work-experience__item {
       margin-left: -2rem;
       padding: 1rem;
       position: relative;
     }
-    .resume-work-experience__item-time {
+    .work-experience__item-time {
       border-radius: 5px;
       &:before {
         content: '';
@@ -72,7 +72,7 @@ export default {
         left: -4px;
       }
     }
-    .resume-work-experience__company {
+    .work-experience__company {
       &:before {
         content: ' ';
         position: absolute;
@@ -84,7 +84,7 @@ export default {
         left: -2px;
       }
     }
-    .resume-work-experience__work-content-title {
+    .work-experience__work-content-title {
       &:before {
         content: ' ';
         position: absolute;
@@ -97,14 +97,14 @@ export default {
       }
     }
 
-    .resume-work-experience__work-content {
+    .work-experience__work-content {
 
     }
-    .resume-work-experience__company-name {
+    .work-experience__company-name {
       font-weight: bold;
 
     }
-    .resume-work-experience__company-work-position {
+    .work-experience__company-work-position {
 
     }
   }

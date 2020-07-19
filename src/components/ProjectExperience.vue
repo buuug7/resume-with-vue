@@ -1,25 +1,25 @@
 <template>
-  <div class="resume-project-experience" v-if="projectExperiences">
-    <h4 class="resume-project-experience__title text-center font-size-22 mb-3">项目经验</h4>
-    <ul class="resume-project-experience__time-line">
+  <div class="project-experience" v-if="projectExperiences">
+    <h4 class="project-experience__title text-center font-size-22 mb-3">项目经验</h4>
+    <ul class="project-experience__time-line">
       <li
-        class="resume-project-experience__item"
+        class="project-experience__item"
         v-for="projectExperience in projectExperiences"
         :key="projectExperience.id"
       >
-        <div class="resume-work-experience__project mb-2">
+        <div class="work-experience__project mb-2">
           <a :href="projectExperience.url"
              v-if="projectExperience.url !== 'none'" target="_blank"
-             class="resume-work-experience__project-name">
+             class="work-experience__project-name">
             {{ projectExperience.name }}
           </a>
-          <span v-else class="resume-work-experience__project-name">{{ projectExperience.name }}</span>
+          <span v-else class="work-experience__project-name">{{ projectExperience.name }}</span>
           <em class="vline"></em>
-          <span class="resume-project-experience__project-position text-secondary">
+          <span class="project-experience__project-position text-secondary">
             {{ projectExperience.position }}
           </span>
         </div>
-        <p class="resume-project-experience__project-description text-secondary">
+        <p class="project-experience__project-description text-secondary">
           {{ projectExperience.description }}
         </p>
       </li>
@@ -38,11 +38,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .resume-project-experience {
+  .project-experience {
     background-color: #fff;
     padding: 1rem 2rem;
   }
-  .resume-project-experience__time-line {
+  .project-experience__time-line {
     padding-left: 4rem;
     position: relative;
     list-style: none;
@@ -56,13 +56,13 @@ export default {
       top: 0;
       bottom: 0;
     }
-    .resume-project-experience__item {
+    .project-experience__item {
       margin-left: -2rem;
       padding: 1rem;
       position: relative;
       font-size: 16px;
     }
-    .resume-work-experience__project {
+    .work-experience__project {
       border-radius: 5px;
       &:before {
         content: '';
@@ -76,7 +76,7 @@ export default {
         left: -4px;
       }
     }
-    .resume-project-experience__project-description {
+    .project-experience__project-description {
       margin-bottom: 0;
       &:before {
         content: ' ';

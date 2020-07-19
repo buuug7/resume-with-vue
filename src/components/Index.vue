@@ -1,31 +1,23 @@
 <template>
   <div class="resume">
     <Header :basicInfo="resume.basicInfo" class="mb-2" />
-
     <SelfDescription :selfDescription="resume.selfDescription" class="mb-2" />
-
     <Skills :skills="resume.skills" class="mb-2" />
-
     <JobIntention :jobIntention="resume.jobIntention" class="mb-2" />
-
     <EducationExperience
       :educationExperiences="resume.educationExperiences"
       class="mb-2"
     />
-
     <WorkExperience :workExperiences="resume.workExperiences" class="mb-2" />
-
     <ProjectExperience
       :projectExperiences="resume.projectExperiences"
       class="mb-1"
     />
-
     <Footer />
   </div>
 </template>
 
 <script>
-import yaml from 'js-yaml';
 import Header from './Header';
 import SelfDescription from './SelfDescription';
 import Skills from './Skills';
@@ -35,26 +27,26 @@ import ProjectExperience from './ProjectExperience';
 import EducationExperience from './EducationExperience';
 import Footer from './Footer';
 
+import myResume from '../resume.yml';
+
 export default {
   name: 'ResumeIndex',
   data() {
     return {
-      /** @var {{basicInfo:object,selfDescription:object,skills:object,jobIntention:object,educationExperiences:object,workExperiences:object,projectExperiences:object}} */
-      resume: {},
+      resume: {
+        basicInfo: null,
+        selfDescription: null,
+        skills: null,
+        jobIntention: null,
+        educationExperiences: null,
+        workExperiences: null,
+        projectExperiences: null
+      },
       flag: false
     };
   },
   mounted() {
-    this.getResume();
-  },
-  methods: {
-    getResume() {
-      fetch('static/resume.yml').then(response => {
-        response.text().then(text => {
-          this.resume = yaml.safeLoad(text);
-        });
-      });
-    }
+    this.resume = myResume;
   },
   components: {
     Header,

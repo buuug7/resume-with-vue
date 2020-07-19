@@ -11,22 +11,23 @@
     "pdf": "node scripts/export-pdf.js"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "js-yaml": "^3.13.1",
-    "utilities-css": "^3.1.1",
-    "vue": "^2.6.10"
+    "bootstrap": "^4.5.0",
+    "utilities-css": "^3.2.0",
+    "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-plugin-eslint": "^3.8.0",
-    "@vue/cli-service": "^3.8.4",
-    "babel-eslint": "^10.0.1",
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
+    "babel-eslint": "^10.1.0",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.2.2",
+    "eslint-plugin-vue": "^5.2.3",
+    "js-yaml-loader": "^1.2.2",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
     "puppeteer": "^1.17.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "sass-loader": "^7.3.1",
+    "vue-template-compiler": "^2.6.11"
   },
   "prettier": {
     "singleQuote": true
@@ -40,7 +41,10 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": "warn",
+      "no-unused-vars": "warn"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }

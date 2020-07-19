@@ -1,13 +1,13 @@
 <template>
-  <div class="resume-skills" v-if="skills">
-    <h4 class="resume-skills__title text-center mb-3">技能</h4>
-    <ul class="resume-skills__skills">
+  <div class="skills" v-if="skills">
+    <h4 class="skills__title text-center mb-3">技能</h4>
+    <ul class="skills__skills">
       <li
-        class="resume-skills__item-skill mb-3"
+        class="skills__item-skill mb-3"
         v-for="skill in skills"
         :key="skill.name"
       >
-        <div class="resume-skills__item-skill-name text-secondary">{{ skill.name }}</div>
+        <div class="skills__item-skill-name text-secondary">{{ skill.name }}</div>
         <div class="progress progress--skill">
           <div
             class="progress-bar"
@@ -32,13 +32,13 @@
 </script>
 
 <style lang="scss" scoped>
-  .resume-skills {
+  .skills {
     background-color: #fff;
     padding: 1rem 2rem;
     overflow-x: auto;
   }
 
-  .resume-skills__skills {
+  .skills__skills {
     list-style: none;
     padding-left: 0;
   }
@@ -72,12 +72,12 @@
       }
     }
 
-    .resume-skills__item-skill {
+    .skills__item-skill {
 
     }
   }
 
-  .resume-skills__item-skill-name {
+  .skills__item-skill-name {
     font-size: 14px;
   }
 </style>

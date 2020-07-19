@@ -1,5 +1,5 @@
 <template>
-  <div class="resume-footer text-muted">
+  <div class="footer text-muted">
     <p>
       Copyright <i class="fa fa-copyright"></i> 2018 <a href="https://github.com/buuug7" target="_blank">Buuug7</a>
     </p>
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .resume-footer{
+  .footer{
     display: flex;
     flex-direction: column;
     padding: 2rem;

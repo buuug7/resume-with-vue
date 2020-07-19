@@ -1,6 +1,5 @@
 # Personal info 个人信息
 basicInfo:
-  avatar: ./static/avatar.jpg
   name: 蒲国红
   sex: 男
   education: 本科
@@ -21,7 +20,7 @@ basicInfo:
 
 # Self description 自我描述
 selfDescription:
-  description: 本人热心、上进心强，服从纪律，有责任心。热爱编程，热爱互联网，对新事物新技术充满好奇。最近几年从事web前后端的开发，熟悉常用的web开发框架。
+  description: 本人服从纪律，有责任心。热爱编程，热爱互联网，对新事物新技术充满好奇。最近几年从事web前后端的开发，熟悉常用的web开发框架。
 
 # Skills 技能
 skills:
