@@ -1,7 +1,7 @@
 <template>
   <div class="footer text-muted">
     <p>
-      Copyright <i class="fa fa-copyright"></i> 2018 <a href="https://github.com/buuug7" target="_blank">Buuug7</a>
+      Copyright <i class="fa fa-copyright"></i> {{new Date().getFullYear()}} <a href="https://github.com/buuug7" target="_blank">Buuug7</a>
     </p>
   </div>
 </template>

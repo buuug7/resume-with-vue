@@ -13,43 +13,43 @@ basicInfo:
   socialAccounts:
     - name: github
       url: https://github.com/buuug7
-    - name: linkedin
-      url: http://www.linkedin.com/in/puguohong/
     - name: stack-overflow
       url: https://stackoverflow.com/users/6080636/puguohong
 
 # Self description 自我描述
 selfDescription:
-  description: 本人服从纪律，有责任心。热爱编程，热爱互联网，对新事物新技术充满好奇。最近几年从事web前后端的开发，熟悉常用的web开发框架。
+  description: 本人服从纪律，有责任心。热爱编程，喜欢互联网，对新事物新技术充满好奇。最近几年从事web开发，熟悉常用的 web 开发框架。
 
 # Skills 技能
 skills:
-  - name: Common=Git/Terminal/DataStructures/Github/SemanticVersioning
+  - name: Common= Git/Terminal/Github/SemanticVersioning
     level: 70
-  - name: Language=HTML/CSS/Javascript/TypeScript/Node/Java/PHP
+  - name: Language= HTML/CSS/Javascript/TypeScript/Java/PHP
     level: 75
-  - name: PackageManger=npm/yarn/composer/apt/maven/gradle
+  - name: BackendFramework= Express/Koa/Laravel/SpringBoot/YII2
     level: 70
-  - name: Framework=Express/Koa/Laravel/SpringBoot/YII2
+  - name: JavaScriptFramwork= Vue/React/Angular
+    level: 75
+  - name: CssFramwork= Bootstrap/Material-ui/Bulma/ant-design
     level: 70
-  - name: CssFramwork=Bootstrap/Bulma/Material-ui/ant-design
+  - name: PackageManger= npm/yarn/composer/maven/gradle
     level: 70
-  - name: ModuleBundlers=Webpack/Parcel/Rollup
+  - name: ModuleBundlers= Webpack/Rollup/Parcel
+    level: 70
+  - name: Test= Mocha/Jest/Junit
     level: 65
-  - name: Test=Mocha/Jest/Junit/Phpunit
+  - name: WebServer= Nginx/Apache2
+    level: 65
+  - name: LinuxDistribute= Ubuntu
     level: 60
-  - name: WebServer=Nginx/Apache2/Tomcat/Jetty
-    level: 70
-  - name: LinuxDistribute=Ubuntu
-    level: 60
-  - name: Database=Mysql
+  - name: Database= Mysql
     level: 65
 
 # Job intention 求职意向
 jobIntention:
-  position: web前后端
+  position: web前端
   location: 西安
-  salary: 8k-12k
+  salary: 10k - 20k
   jobTime: 全职
 
 #educationExperiences 教育经历
@@ -62,71 +62,59 @@ educationExperiences:
 
 # Work experiences 工作经历
 workExperiences:
-  - id: 0
-    time: 2013.5 - 2015.7
-    companyName: 瑞通科技
-    workPosition: web前后端
-    workContents:
-      - id: 0
-        text: 维护公司已有前端项目，负责公司Web项目前端开发
-      - id: 1
-        text: 负责前端开发标准规范的制定、维护
-      - id: 2
-        text: 与美工、后端工程相互配合，负责公司各产品易用性改进、界面技术优化和性能优化
   - id: 1
-    time: 2015.7 - 2017.9
-    companyName: 甘肃天奇
-    workPosition: web前后端
-    workContents:
-      - id: 0
-        text: 维护公司web项目，参与公司web项目前后端的设计、开发以及部署
-      - id: 1
-        text: 根据项目具体要求，承担开发任务，配合后端开发人员接入相关接口数据并展现
-      - id: 2
-        text: 对旧项目的改进升级以及二次开发
-      - id: 3
-        text: 负责手机端和PC端产品的前端页面开发
-      - id: 4
-        text: 负责前后端开发标准规范的制定、维护
-  - id: 2
     time: 2018.7 - now
     companyName: 西安图迹
     workPosition: Frontend
     workContents:
       - id: 0
-        text: 负责公司web项目前端相关工作
+        text: 负责公司web项目前端开发
       - id: 1
-        text: 负责公司手机应用开发
+        text: 负责公司移动应用开发
+  - id: 0
+    time: 2015.7 - 2017.9
+    companyName: 甘肃天奇
+    workPosition: web前后端
+    workContents:
+      - id: 0
+        text: 维护公司web项目, 移动应用项目，参与公司web项目前后端的设计、开发以及部署
+      - id: 2
+        text: 与美工、后端配合，改进产品易用性、界面展示优化和性能优化
 
 # Project experiences 项目经验
 projectExperiences:
-  - id: 0
-    name: 鸡汤文
-    url: http://soups.tq0.com/
-    position: Fullstack
-    description: 一个用来分享和收藏心灵鸡汤的网站
-  - id: 1
-    name: 定西人大官网
-    url: http://dxrdw.gov.cn/
-    position: Fullstack
-    description: 定西人大官方官网
-  - id: 2
-    name: 定西社会组织
-    url: http://dxsh.gov.cn/
-    position: Fullstack
-    description: 定西市民间组织管理局官方网站
+  - id: 6
+    name: 中国华电竞争报价（电力现货）系统
+    url: none
+    position: Frontend
+    description: 提供电力批发市场全流程信息化支撑,为电厂和售电公司在市场售购电交易业务提供辅助决策
+  - id: 5
+    name: 南方电网工程服务系统
+    url: none
+    position: Frontend
+    description: 南方电网工程服务应用，管理南方电网供应商的一个系统
+  - id: 4
+    name: 华润电力移动EAM
+    url: none
+    position: Frontend
+    description: 华润电力移动资产管理系统，管理资产的一个移动应用
   - id: 3
     name: 渭源县电子商务公共服务中心
     url: http://ds8.com.cn/
     position: Fullstack
     description: 渭源县商务局，渭源县电子商务公共服务中心。
-  - id: 4
-    name: 华润电力移动EAM
-    url: none
-    position: Frontend
-    description: 华润电力移动资产管理系统
-  - id: 5
-    name: 南方电网工程服务系统
-    url: none
-    position: Frontend
-    description: 南方电网工程服务系统
+  - id: 2
+    name: 定西人大官网
+    url: http://dxrdw.gov.cn/
+    position: Fullstack
+    description: 定西人大官方官网
+  - id: 1
+    name: 定西社会组织
+    url: http://dxsh.gov.cn/
+    position: Fullstack
+    description: 定西市民间组织管理局官方网站
+  - id: 0
+    name: 鸡汤文
+    url: http://soups.tq0.com/
+    position: Fullstack
+    description: 一个用来分享和收藏心灵鸡汤的网站

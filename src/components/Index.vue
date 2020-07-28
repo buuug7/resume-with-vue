@@ -63,8 +63,8 @@ export default {
 
 <style scoped lang="scss">
 .resume {
-  max-width: 650px;
-  margin: 4rem auto;
+  /*max-width: 650px;*/
+  /*margin: 4rem auto;*/
 }
 
 @media (max-width: 768px) {
