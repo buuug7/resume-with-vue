@@ -11,10 +11,10 @@
     "pdf": "node scripts/export-pdf.js"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.6.0",
     "sass": "^1.32.5",
     "utilities-css": "^3.2.0",
-    "vue": "^2.6.11"
+    "vue": "^2.6.12"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
@@ -24,10 +24,10 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.3",
     "js-yaml-loader": "^1.2.2",
-    "prettier": "^2.0.5",
+    "prettier": "^2.2.1",
     "puppeteer": "^1.17.0",
     "sass-loader": "^7.3.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "prettier": {
     "singleQuote": true
