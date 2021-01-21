@@ -67,10 +67,10 @@ export default {
   /*margin: 4rem auto;*/
 }
 
-@media (max-width: 768px) {
+@media(min-width: 768px) {
   .resume {
-    margin-top: 0;
-    margin-bottom: 0;
+    max-width: 768px;
+    margin: 0 auto;
   }
 }
 </style>

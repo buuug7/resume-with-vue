@@ -86,7 +86,7 @@ export default {
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     .header__personal-info {
       flex-direction: column;
       li {

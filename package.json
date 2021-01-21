@@ -1,7 +1,7 @@
 {
   "name": "your-resume",
   "version": "1.0.0",
-  "description": "create your resume easily, made with Vue.",
+  "description": "create your resume easily",
   "author": "buuug7 <youpp@126.com>",
   "private": false,
   "scripts": {
