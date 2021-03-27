@@ -1,6 +1,6 @@
 <template>
   <div class="job-intention" v-if="jobIntention">
-    <h4 class="job-intention__title text-center mb-3">求职意向</h4>
+    <h4 class="job-intention__title text-center mb-2">求职意向</h4>
     <ul class="job-intention__content">
       <li>{{ jobIntention.position }}</li>
       <li>{{ jobIntention.location }}</li>
@@ -23,7 +23,7 @@ export default {
 <style lang="scss" >
   .job-intention {
     background-color: #fff;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
   }
   .job-intention__content{
     display: flex;
@@ -34,5 +34,6 @@ export default {
     >li{
       padding:5px 10px;
     }
+    margin-bottom: .5rem;
   }
 </style>

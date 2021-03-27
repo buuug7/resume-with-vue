@@ -1,6 +1,6 @@
 <template>
   <div class="skills" v-if="skills">
-    <h4 class="skills__title text-center mb-3">技能</h4>
+    <h4 class="skills__title text-center mb-2">技能</h4>
     <ul class="skills__skills">
       <li
         class="skills__item-skill mb-3"
@@ -34,13 +34,14 @@
 <style lang="scss" scoped>
   .skills {
     background-color: #fff;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     overflow-x: auto;
   }
 
   .skills__skills {
     list-style: none;
     padding-left: 0;
+    margin-bottom: .5rem;
   }
 
   .progress--skill {

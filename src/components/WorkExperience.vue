@@ -1,6 +1,6 @@
 <template>
   <div class="work-experience" v-if="workExperiences">
-    <h4 class="work-experience__title text-center mb-3">工作经历</h4>
+    <h4 class="work-experience__title text-center mb-2">工作经历</h4>
     <ul class="work-experience__time-line">
       <li
         class="work-experience__item"
@@ -37,12 +37,13 @@ export default {
 <style lang="scss" scoped>
   .work-experience {
     background-color: #fff;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
   }
   .work-experience__time-line {
     padding-left: 4rem;
     position: relative;
     list-style: none;
+    margin-bottom: .5rem;
     &:before {
       content: ' ';
       position: absolute;

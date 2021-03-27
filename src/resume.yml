@@ -5,7 +5,7 @@ basicInfo:
   education: 本科
   workExperience: 5年经验
   status: 离职
-  location: 甘肃兰州
+  location: 西安市
   born: 1986
   contact:
     phone: 18309467501
@@ -18,30 +18,20 @@ basicInfo:
 
 # Self description 自我描述
 selfDescription:
-  description: 本人服从纪律，有责任心。热爱编程，喜欢互联网，对新事物新技术充满好奇。最近几年从事web开发，熟悉常用的 web 开发框架。
+  description: 本人工作服从纪律，有责任心。热爱互联网，喜欢编程，对新事物新技术充满好奇。最近几年从事web开发，熟悉常用的 web 开发框架。
 
 # Skills 技能
 skills:
-  - name: Common= Git/Terminal/Github/SemanticVersioning
+  - name: Common= Git/Basic Terminal knowlege/Github
     level: 70
-  - name: Language= HTML/CSS/Javascript/TypeScript/Java/PHP
-    level: 75
-  - name: BackendFramework= Express/Koa/Laravel/SpringBoot/YII2
+  - name: Language= Javascript/HTML/CSS/TypeScript/Java
     level: 70
-  - name: JavaScriptFramwork= Vue/React/Angular
+  - name: BackendFramework= Express/Koa/Laravel/SpringBoot
+    level: 70
+  - name: JavaScriptFramwork= Vue/React/Angular/RN
     level: 75
   - name: CssFramwork= Bootstrap/Material-ui/Bulma/ant-design
     level: 70
-  - name: PackageManger= npm/yarn/composer/maven/gradle
-    level: 70
-  - name: ModuleBundlers= Webpack/Rollup/Parcel
-    level: 70
-  - name: Test= Mocha/Jest/Junit
-    level: 65
-  - name: WebServer= Nginx/Apache2
-    level: 65
-  - name: LinuxDistribute= Ubuntu
-    level: 60
   - name: Database= Mysql
     level: 65
 
@@ -65,7 +55,7 @@ workExperiences:
   - id: 1
     time: 2018.7 - now
     companyName: 西安图迹
-    workPosition: Frontend
+    workPosition: web前端
     workContents:
       - id: 0
         text: 负责公司web项目前端开发
@@ -86,35 +76,30 @@ projectExperiences:
   - id: 6
     name: 中国华电竞争报价（电力现货）系统
     url: none
-    position: Frontend
+    position: web前端
     description: 提供电力批发市场全流程信息化支撑,为电厂和售电公司在市场售购电交易业务提供辅助决策
   - id: 5
     name: 南方电网工程服务系统
     url: none
-    position: Frontend
+    position: web前端
     description: 南方电网工程服务应用，管理南方电网供应商的一个系统
   - id: 4
     name: 华润电力移动EAM
     url: none
-    position: Frontend
+    position: web前端
     description: 华润电力移动资产管理系统，管理资产的一个移动应用
   - id: 3
     name: 渭源县电子商务公共服务中心
     url: http://ds8.com.cn/
-    position: Fullstack
+    position: 全栈
     description: 渭源县商务局，渭源县电子商务公共服务中心。
   - id: 2
     name: 定西人大官网
     url: http://dxrdw.gov.cn/
-    position: Fullstack
+    position: 全栈
     description: 定西人大官方官网
   - id: 1
     name: 定西社会组织
     url: http://dxsh.gov.cn/
-    position: Fullstack
+    position: 全栈
     description: 定西市民间组织管理局官方网站
-  - id: 0
-    name: 鸡汤文
-    url: http://soups.tq0.com/
-    position: Fullstack
-    description: 一个用来分享和收藏心灵鸡汤的网站

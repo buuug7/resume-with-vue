@@ -1,6 +1,6 @@
 <template>
   <div class="project-experience" v-if="projectExperiences">
-    <h4 class="project-experience__title text-center font-size-22 mb-3">项目经验</h4>
+    <h4 class="project-experience__title text-center font-size-22 mb-2">项目经验</h4>
     <ul class="project-experience__time-line">
       <li
         class="project-experience__item"
@@ -40,12 +40,13 @@ export default {
 <style lang="scss" scoped>
   .project-experience {
     background-color: #fff;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
   }
   .project-experience__time-line {
     padding-left: 4rem;
     position: relative;
     list-style: none;
+    margin-bottom: .5rem;
     &:before {
       content: ' ';
       position: absolute;

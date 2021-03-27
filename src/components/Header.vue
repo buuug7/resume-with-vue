@@ -56,13 +56,13 @@ export default {
     background: url('./../assets/resum-header-bg.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
-    height: 9rem;
+    height: 6.5rem;
     padding: 1rem;
     text-align: center;
   }
   .header__avatar {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     position: absolute;
     bottom: -60px;
@@ -70,13 +70,13 @@ export default {
     border: 3px solid darken(#fff, 2%);
   }
   .header__down {
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 3.5rem 1rem .5rem 1rem;
   }
 
   .header__personal-info {
     display: flex;
     flex-direction: row;
-    margin: 1rem 0;
+    margin: .5rem 0;
     text-align: center;
     justify-content: center;
     list-style: none;
@@ -97,7 +97,7 @@ export default {
   .header__contact {
     display: flex;
     flex-direction: row;
-    margin: 1rem 0;
+    margin: .5rem 0;
     text-align: center;
     justify-content: center;
     list-style: none;
@@ -115,7 +115,7 @@ export default {
     list-style: none;
     padding-left: 0;
     li {
-      padding: 8px;
+      padding: 6px;
     }
   }
 }

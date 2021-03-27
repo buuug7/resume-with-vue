@@ -1,6 +1,6 @@
 <template>
   <div class="education-experience" v-if="educationExperiences">
-    <h4 class="education-experience__title text-center mb-3">教育经历</h4>
+    <h4 class="education-experience__title text-center mb-2">教育经历</h4>
     <ul class="education-experience__time-line">
       <li
         class="education-experience__item"
@@ -42,7 +42,7 @@ export default {
 <style lang="scss" scoped>
   .education-experience {
     background-color: #fff;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
   }
   .education-experience__time-line{
     padding-left: 4rem;
@@ -64,6 +64,7 @@ export default {
       padding: 1rem;
       position: relative;
     }
+    margin-bottom: .5rem;
   }
   .education-experience__duration-time{
     border-radius: 5px;
