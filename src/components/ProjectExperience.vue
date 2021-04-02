@@ -1,6 +1,6 @@
 <template>
   <div class="project-experience" v-if="projectExperiences">
-    <h4 class="project-experience__title text-center font-size-22 mb-2">项目经验</h4>
+    <h4 class="project-experience__title block-title mb-2">项目经验</h4>
     <ul class="project-experience__time-line">
       <li
         class="project-experience__item"

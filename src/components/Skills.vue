@@ -1,6 +1,6 @@
 <template>
   <div class="skills" v-if="skills">
-    <h4 class="skills__title text-center mb-2">技能</h4>
+    <h4 class="skills__title block-title mb-2">技能</h4>
     <ul class="skills__skills">
       <li
         class="skills__item-skill mb-3"

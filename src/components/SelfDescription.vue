@@ -1,6 +1,6 @@
 <template>
   <div class="self-description" v-if="selfDescription">
-    <h4 class="self-description__title text-center mb-2">自我描述</h4>
+    <h4 class="self-description__title block-title mb-2">自我描述</h4>
     <p class="self-description__description">
       {{ selfDescription.description }}</p>
   </div>

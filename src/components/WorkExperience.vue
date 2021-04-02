@@ -1,6 +1,6 @@
 <template>
   <div class="work-experience" v-if="workExperiences">
-    <h4 class="work-experience__title text-center mb-2">工作经历</h4>
+    <h4 class="work-experience__title block-title mb-2">工作经历</h4>
     <ul class="work-experience__time-line">
       <li
         class="work-experience__item"
@@ -102,7 +102,7 @@ export default {
 
     }
     .work-experience__company-name {
-      font-weight: bold;
+
 
     }
     .work-experience__company-work-position {

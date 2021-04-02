@@ -1,6 +1,6 @@
 <template>
   <div class="education-experience" v-if="educationExperiences">
-    <h4 class="education-experience__title text-center mb-2">教育经历</h4>
+    <h4 class="education-experience__title block-title mb-2">教育经历</h4>
     <ul class="education-experience__time-line">
       <li
         class="education-experience__item"
@@ -81,7 +81,7 @@ export default {
     }
   }
   .education-experience__education-name{
-    font-weight: bold;
+
   }
 
   .education-experience__item-education-info{

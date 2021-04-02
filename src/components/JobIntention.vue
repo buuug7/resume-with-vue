@@ -1,6 +1,6 @@
 <template>
   <div class="job-intention" v-if="jobIntention">
-    <h4 class="job-intention__title text-center mb-2">求职意向</h4>
+    <h4 class="job-intention__title block-title mb-2">求职意向</h4>
     <ul class="job-intention__content">
       <li>{{ jobIntention.position }}</li>
       <li>{{ jobIntention.location }}</li>
