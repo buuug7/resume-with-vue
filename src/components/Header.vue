@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import avatar from '../assets/avatar.jpg';
+import avatar from '../assets/me.jpg';
 export default {
   name: 'ResumeHeader',
   props: ['basicInfo'],
