@@ -17,6 +17,6 @@ export default {
 
 <style>
 #app {
-  margin-top: 1rem;
+
 }
 </style>
