@@ -103,7 +103,7 @@ projectExperiences:
     url: http://ds8.com.cn/
     position: 全栈
     description: 渭源县商务局，渭源县电子商务公共服务中心。
-    frameworks: laravel,jquery
+    frameworks: laravel, jquery
   - id: 2
     name: 定西人大官网
     url: http://dxrdw.gov.cn/
