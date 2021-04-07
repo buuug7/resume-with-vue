@@ -85,19 +85,19 @@ projectExperiences:
     url: none
     position: web前端
     description: 提供电力批发市场全流程信息化支撑,为电厂和售电公司在市场售购电交易业务提供辅助决策
-    frameworks: vue,react（两套实现，一套是基于react，一套基于vue）
+    frameworks: vue, react（两套实现，一套是基于react，一套基于vue）
   - id: 5
     name: 南方电网工程服务系统
     url: none
     position: web前端
     description: 南方电网工程服务应用，管理南方电网供应商的一个系统
-    frameworks: ionic,angular
+    frameworks: ionic, angular
   - id: 4
     name: 华润电力移动EAM
     url: none
     position: web前端
     description: 华润电力移动资产管理系统，管理发电厂资产的一个移动应用
-    frameworks: 移动混合应用H5, uniApp, jquery
+    frameworks: 移动混合应用H5, uniApp, vue
   - id: 3
     name: 渭源县电子商务公共服务中心
     url: http://ds8.com.cn/
