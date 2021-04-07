@@ -8,12 +8,17 @@
         :key="projectExperience.id"
       >
         <div class="work-experience__project mb-2">
-          <a :href="projectExperience.url"
-             v-if="projectExperience.url !== 'none'" target="_blank"
-             class="work-experience__project-name">
+          <a
+            :href="projectExperience.url"
+            v-if="projectExperience.url !== 'none'"
+            target="_blank"
+            class="work-experience__project-name"
+          >
             {{ projectExperience.name }}
           </a>
-          <span v-else class="work-experience__project-name">{{ projectExperience.name }}</span>
+          <span v-else class="work-experience__project-name">{{
+            projectExperience.name
+          }}</span>
           <em class="vline"></em>
           <span class="project-experience__project-position text-secondary">
             {{ projectExperience.position }}
@@ -21,6 +26,9 @@
         </div>
         <p class="project-experience__project-description text-secondary">
           {{ projectExperience.description }}
+        </p>
+        <p class="project-experience__project-frameworks text-secondary mt-2">
+          主要使用的框架以及库：{{ projectExperience.frameworks }}
         </p>
       </li>
     </ul>
@@ -33,62 +41,75 @@ export default {
   props: ['projectExperiences'],
   components: {
     //
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-  .project-experience {
-    background-color: #fff;
-    padding: .5rem 1rem;
+.project-experience {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+}
+.project-experience__time-line {
+  padding-left: 4rem;
+  position: relative;
+  list-style: none;
+  margin-bottom: 0.5rem;
+  &:before {
+    content: ' ';
+    position: absolute;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
+    left: 2rem;
+    top: 0;
+    bottom: 0;
   }
-  .project-experience__time-line {
-    padding-left: 4rem;
+  .project-experience__item {
+    margin-left: -2rem;
+    padding: 1rem;
     position: relative;
-    list-style: none;
-    margin-bottom: .5rem;
+    font-size: 16px;
+  }
+  .work-experience__project {
+    border-radius: 5px;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      background: #fff;
+      border: 1px #18c3b1 solid;
+      border-radius: 100%;
+      top: 22px;
+      left: -4px;
+    }
+  }
+  .project-experience__project-description {
+    margin-bottom: 0;
     &:before {
       content: ' ';
       position: absolute;
-      width: 1px;
-      background-color: rgba(0, 0, 0, 0.1);
-      display: block;
-      left: 2rem;
-      top: 0;
-      bottom: 0;
-    }
-    .project-experience__item {
-      margin-left: -2rem;
-      padding: 1rem;
-      position: relative;
-      font-size: 16px;
-    }
-    .work-experience__project {
-      border-radius: 5px;
-      &:before {
-        content: '';
-        position: absolute;
-        width: 9px;
-        height: 9px;
-        background: #fff;
-        border: 1px #18c3b1 solid;
-        border-radius: 100%;
-        top: 22px;
-        left: -4px;
-      }
-    }
-    .project-experience__project-description {
-      margin-bottom: 0;
-      &:before {
-        content: ' ';
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        background: rgba(0, 0, 0, 0.3);
-        border-radius: 100%;
-        top: 55px;
-        left: -2px;
-      }
+      width: 5px;
+      height: 5px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 100%;
+      top: 55px;
+      left: -2px;
     }
   }
+  .project-experience__project-frameworks {
+    margin-bottom: 0;
+    &:before {
+      content: ' ';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 100%;
+      top: 90px;
+      left: -2px;
+    }
+  }
+}
 </style>
