@@ -1,8 +1,8 @@
 # Your Resume 你的简历
 
-Create your resume easily. Inspired by [best-resume-ever](https://github.com/salomonelli/best-resume-ever).
+Create your resume easily, inspired by [best-resume-ever](https://github.com/salomonelli/best-resume-ever).
 
-轻松创建你的简历。灵感来自于 [best-resume-ever](https://github.com/salomonelli/best-resume-ever).
+轻松创建你的简历, 灵感来自于 [best-resume-ever](https://github.com/salomonelli/best-resume-ever).
 
 ## How to use
 
