@@ -1,16 +1,36 @@
 <template>
   <div class="resume">
-    <Header :basicInfo="resume.basicInfo" class="mb-2" />
-    <SelfDescription :selfDescription="resume.selfDescription" class="mb-2" />
-    <Skills :skills="resume.skills" class="mb-2" />
-    <JobIntention :jobIntention="resume.jobIntention" class="mb-2" />
-    <EducationExperience
-      :educationExperiences="resume.educationExperiences"
+    <Header
+      :basicInfo="resume.basicInfo"
+      :lang="lang"
+      class="mb-2"
+      @langChanged="handleLangChanged"
+    />
+    <SelfDescription
+      :selfDescription="resume.selfDescription"
+      :lang="lang"
       class="mb-2"
     />
-    <WorkExperience :workExperiences="resume.workExperiences" class="mb-2" />
+    <Skills :skills="resume.skills" :lang="lang" class="mb-2" />
+    <JobIntention
+      :jobIntention="resume.jobIntention"
+      :lang="lang"
+      class="mb-2"
+      v-if="false"
+    />
+    <EducationExperience
+      :educationExperiences="resume.educationExperiences"
+      :lang="lang"
+      class="mb-2"
+    />
+    <WorkExperience
+      :workExperiences="resume.workExperiences"
+      :lang="lang"
+      class="mb-2"
+    />
     <ProjectExperience
       :projectExperiences="resume.projectExperiences"
+      :lang="lang"
       class="mb-1"
     />
     <Footer />
@@ -40,13 +60,19 @@ export default {
         jobIntention: null,
         educationExperiences: null,
         workExperiences: null,
-        projectExperiences: null
+        projectExperiences: null,
       },
-      flag: false
+      lang: 'en',
     };
   },
   mounted() {
     this.resume = myResume;
+  },
+  methods: {
+    handleLangChanged(e) {
+      console.log('lang', e);
+      this.lang = e;
+    },
   },
   components: {
     Header,
@@ -56,8 +82,8 @@ export default {
     WorkExperience,
     ProjectExperience,
     EducationExperience,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 
@@ -67,7 +93,7 @@ export default {
   /*margin: 4rem auto;*/
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .resume {
     max-width: 768px;
     margin: 0 auto;

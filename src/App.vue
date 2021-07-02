@@ -1,22 +1,21 @@
 <template>
   <div id="app">
-    <Resume/>
+    <Resume />
   </div>
 </template>
 
 <script>
-import Resume from './components/Index'
+import Resume from './components/Index';
 
 export default {
   name: 'app',
   components: {
-    Resume
-  }
-}
+    Resume,
+  },
+};
 </script>
 
 <style>
 #app {
-
 }
 </style>

@@ -1,6 +1,9 @@
 <template>
   <div class="project-experience" v-if="projectExperiences">
-    <h4 class="project-experience__title block-title mb-2">项目经验</h4>
+    <h4 class="project-experience__title block-title mb-2">
+      <span v-if="lang === 'cn'">项目经验</span>
+      <span v-else>Project experience</span>
+    </h4>
     <ul class="project-experience__time-line">
       <li
         class="project-experience__item"
@@ -38,7 +41,7 @@
 <script>
 export default {
   name: 'ResumeProjectExperience',
-  props: ['projectExperiences'],
+  props: ['projectExperiences', 'lang'],
   components: {
     //
   },
