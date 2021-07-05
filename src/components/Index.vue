@@ -62,7 +62,7 @@ export default {
         workExperiences: null,
         projectExperiences: null,
       },
-      lang: 'en',
+      lang: 'cn',
     };
   },
   mounted() {

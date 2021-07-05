@@ -2,7 +2,7 @@
 basicInfo:
   name:
     cn: 蒲国红
-    en: Pu,guohong
+    en: Pu,GuoHong
   sex:
     cn: 男
     en: boy
@@ -36,15 +36,15 @@ selfDescription:
 
 # Skills 技能
 skills:
-  - name: Common= Git/Basic Terminal knowlege/Github
+  - name: Common= Git/Basic Terminal knowledge/Github
     level: 70
   - name: Language= Javascript/HTML/CSS/TypeScript
     level: 70
   - name: BackendFramework= Express/Koa/Laravel
     level: 70
-  - name: JavaScriptFramwork= Vue/React/Angular
+  - name: JavaScriptFramework= Vue/React/Angular
     level: 75
-  - name: CssFramwork= Bootstrap/Material-ui/Bulma/ant-design
+  - name: CssFramework= Bootstrap/Material-ui/Bulma/ant-design
     level: 70
   - name: Database= Mysql
     level: 65
@@ -123,16 +123,41 @@ projectExperiences:
     url: http://ds8.com.cn/
     position: web fullstack
     description: 渭源县商务局，渭源县电子商务公共服务中心。
-    frameworks: laravel, jquery
+    frameworks: laravel, jQuery
   - id: 2
     name: 定西人大官网
     url: http://dxrdw.gov.cn/
     position: web fullstack
     description: 定西市人大官方官网
-    frameworks: laravel, jquery
+    frameworks: laravel, jQuery
   - id: 1
     name: 定西社会组织
     url: http://dxsh.gov.cn/
     position: web fullstack
     description: 定西市民间组织管理局官方网站
-    frameworks: laravel, jquery
+    frameworks: laravel, jQuery
+other:
+  - id: 1
+    name: GBK to UTF8 for vscode
+    url: https://github.com/buuug7/gbk2utf8-vscode
+    description: 一个用来把 GBK 相关编码文件转换为 UTF8 的 vscode 插件。
+  - id: 2
+    name: 中文标点符号替换为英文 (Chinese punctuation to english for vscode)
+    url: https://github.com/buuug7/chinese-punctuation-to-english
+    description: 一个将中文标点符号替换为英文的 vscode 扩展
+  - id: 3
+    name: 英语生词本(google chrome extension)
+    url: https://github.com/buuug7/collect-new-english-words
+    description: 一个Chrome扩展，把新的英语单词收集到我的单词书中
+  - id: 4
+    name: 中文常用字
+    url: https://github.com/buuug7/common-chinese-character
+    description: 收录汉语中最常用的汉字以及词语频率表
+  - id: 5
+    name: Utility CSS
+    url: https://github.com/buuug7/utilities-css
+    description: Simple and easy to use utilities CSS, inspired by tailwindcss, but the tailwindcss is more complex and verbose to use. This only focused on wrap the most common used css into class name. Most of them is steal from Bootstrap utilities.
+  - id: 6
+    name: simplify css component
+    url: https://github.com/buuug7/simplify
+    description: 一个极简，有态度的纯净的 CSS 组件库。
