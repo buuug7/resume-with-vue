@@ -31,8 +31,9 @@
     <ProjectExperience
       :projectExperiences="resume.projectExperiences"
       :lang="lang"
-      class="mb-1"
+      class="mb-2"
     />
+    <ResumeOther :others="resume.others" :lang="lang" class="mb-1" />
     <Footer />
   </div>
 </template>
@@ -45,6 +46,7 @@ import JobIntention from './JobIntention';
 import WorkExperience from './WorkExperience';
 import ProjectExperience from './ProjectExperience';
 import EducationExperience from './EducationExperience';
+import ResumeOther from './Other';
 import Footer from './Footer';
 
 import myResume from '../resume.yml';
@@ -61,6 +63,7 @@ export default {
         educationExperiences: null,
         workExperiences: null,
         projectExperiences: null,
+        others: null,
       },
       lang: 'cn',
     };
@@ -75,6 +78,7 @@ export default {
     },
   },
   components: {
+    ResumeOther,
     Header,
     SelfDescription,
     Skills,
